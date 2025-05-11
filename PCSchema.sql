@@ -8,15 +8,15 @@ CREATE TABLE pcComponent(
 );
 
 CREATE TABLE pcClient(
-    cnp CHAR(13) NOT NULL,
+    cnp VARCHAR2(13) NOT NULL,
     nume VARCHAR2(32) NOT NULL,
     email VARCHAR2(64) NOT NULL,
     CONSTRAINT Clnt_pk PRIMARY KEY(cnp)
 );
 
 CREATE TABLE pcComanda(
-    codPC CHAR(6) NOT NULL,
-    cnp CHAR(13) NOT NULL,
+    codPC VARCHAR2(6) NOT NULL,
+    cnp VARCHAR2(13) NOT NULL,
     data DATE NOT NULL,
     CONSTRAINT Cmnd_pk PRIMARY KEY(codPC),
     CONSTRAINT Clnt_fk FOREIGN KEY(cnp) REFERENCES pcClient(cnp) on delete cascade
