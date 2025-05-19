@@ -1,3 +1,5 @@
+-- PCDate.sql
+
 -- Componente 
 INSERT INTO pcComponent VALUES ('C001', 'Procesor Intel i5', 'Intel', 899.99);
 INSERT INTO pcComponent VALUES ('C002', 'Placa Video RTX 3060', 'NVIDIA', 2599.00);

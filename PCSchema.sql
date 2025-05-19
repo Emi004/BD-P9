@@ -1,3 +1,4 @@
+-- PCSchema.sql
 
 CREATE TABLE pcComponent(
     codC VARCHAR2(4) NOT NULL,
